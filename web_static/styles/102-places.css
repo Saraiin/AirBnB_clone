@@ -1,0 +1,250 @@
+/* PLACES SECTION */
+section.places {
+	width: 100%;
+	padding: 30px 10px;
+}
+
+section.places > h1 {
+	font-size: 30px;
+}
+
+/* PLACES LIST */
+section.places > ul {
+	list-style: none;
+
+	display: flex;
+	justify-content: center;
+
+	flex-wrap: wrap;
+}
+section.places > ul > li {
+	display: flex;
+}
+/* (PLACE) ARTICLE */
+section.places article {
+	max-width: 390px;
+
+	padding: 20px;
+	margin: 20px;
+
+	border: 1px solid #ff5a5f;
+	border-radius: 4px;
+
+	position: relative;
+}
+
+section.places article > h2 {
+	text-align: center;
+	font-size: 30px;
+
+	height: 60px;
+}
+
+/* PLACE - PRICE BY NIGHT */
+section.places article .price_by_night {
+	color: #ff5a5f;
+
+	height: 60px;
+	min-width: 60px;
+
+	font-size: 30px;
+
+	border: 4px solid #ff5a5f;
+	border-radius: 50%;
+
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+	padding: 2px;
+}
+
+/* PLACE - INFORMATION */
+section.places article .information {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	height: 80px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+
+	margin: 10px 0;
+
+	text-align: center;
+}
+section.places article .information .icon {
+	width: 50px;
+	height: 50px;
+
+	background-size: contain;
+}
+section.places article .information .max_guest,
+section.places article .information .number_rooms,
+section.places article .information .number_bathrooms {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section.places article .information .max_guest .icon {
+	background-image: url("../images/icon_group.png");
+}
+section.places article .information .number_rooms .icon {
+	background-image: url("../images/icon_bed.png");
+}
+section.places article .information .number_bathrooms .icon {
+	background-image: url("../images/icon_bath.png");
+}
+
+/* PLACE - OWNER */
+section.places article .user {
+	padding: 10px 0;
+}
+
+/* PLACE AMENITIES */
+section.places article .amenities {
+	margin-top: 40px;
+}
+section.places article .amenities > h2 {
+	font-size: 16px;
+
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dddddd;
+}
+section.places article .amenities > ul {
+	list-style: none;
+
+	margin-top: 15px;
+}
+section.places article .amenities > ul > li {
+	display: flex;
+	align-items: center;
+
+	margin: 5px 0;
+}
+section.places article .amenities > ul > li > .icon {
+	width: 24px;
+	height: 24px;
+
+	margin-right: 15px;
+}
+section.places article .amenities > ul > li > .icon.tv {
+	background-image: url("../images/icon_tv.png");
+	background-size: contain;
+}
+section.places article .amenities > ul > li > .icon.wifi {
+	background-image: url("../images/icon_wifi.png");
+	background-size: contain;
+}
+section.places article .amenities > ul > li > .icon.pets {
+	background-image: url("../images/icon_pets.png");
+	background-size: contain;
+}
+
+/* PLACE REVIEwS */
+section.places article .reviews {
+	margin-top: 40px;
+}
+section.places article .reviews > h2 {
+	font-size: 16px;
+
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dddddd;
+}
+section.places article .reviews > ul {
+	list-style: none;
+
+	margin-top: 15px;
+}
+section.places article .reviews > ul > li {
+	margin: 10px 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	section.places {
+		padding: 20px 7.5px;
+	}
+	section.places > h1 {
+		font-size: 20px;
+	}
+	section.places article {
+		width: auto;
+
+		padding: 10px;
+		margin: 5px;
+	}
+	section.places article > h2 {
+		text-align: center;
+		font-size: 20px;
+
+		height: 40px;
+	}
+	section.places article .price_by_night {
+		height: 40px;
+		min-width: 40px;
+
+		font-size: 18px;
+
+		border-width: 3px;
+		line-height: 30px;
+
+		padding: 2px;
+	}
+	section.places article .information {
+		height: 60px;
+		margin: 8px 0;
+	}
+	section.places article .information .icon {
+		width: 30px;
+		height: 30px;
+	}
+	section.places article .user {
+		padding: 8px 0;
+	}
+	section.places article .amenities {
+		margin-top: 30px;
+	}
+	section.places article .amenities > h2 {
+		font-size: 14px;
+		padding-bottom: 8px;
+	}
+	section.places article .amenities > ul {
+		margin-top: 10px;
+	}
+	section.places article .amenities > ul > li > .icon {
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+	}
+	section.places article .reviews {
+		margin-top: 30px;
+	}
+	section.places article .reviews > h2 {
+		font-size: 14px;
+		padding-bottom: 8px;
+	}
+	section.places article .reviews > ul {
+		margin-top: 10px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
